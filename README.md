@@ -1,5 +1,12 @@
 # Fermi-LATV2-DL
 
+The full pipeline starting from patches of sky to catalog-like data products are created viathe pipeline as below: 
+
+)
+
+![pipeline](https://github.com/suvoooo/Fermi-LATV2-DL/blob/main/Images/ASID_flow_updated_S10_Flux1.pdf)
+
+
 We have these components listed below for constructing a deep learning based gamma-ray catalog for Fermi-LAT data. 
 
 ## Point Source Detection + Localization
@@ -12,6 +19,12 @@ We have these components listed below for constructing a deep learning based gam
     - Astropy; 5.0.4
     - Scikit-Image; 0.16.2
     - Scikit-Learn; 1.0.2
+    
+    
+An example of segmentation predictions for 3 randomly selected patches are shown below: 
+
+![segment](https://github.com/suvoooo/Fermi-LATV2-DL/blob/main/Images/test_random_preds_masks2-7GeV.png)      
+
 
 ## Source Characterization: Flux Estimation
 * We use a simple VGG-like network to estimate photon flux of individual sources (all detection, True Positives + False Positives)
