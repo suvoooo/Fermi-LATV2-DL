@@ -56,8 +56,8 @@ def read_npy_data(base_dir:str, train:bool, norm:bool, add_poisson:bool,
             file_path = os.path.join(base_dir, filename)
             im_data = np.load(file_path)
             
-            im_tot = (im_data[0, :, :, :] + (im_data[1, :, :, :]*1.7) + (im_data[2, :, :, :]*1.7) 
-                    + (im_data[3, :, :, :]*1.7) + (im_data[4, :, :, :]*1.7))
+            im_tot = (im_data[0, :, :, :] + im_data[1, :, :, :] + im_data[2, :, :, :] 
+                    + im_data[3, :, :, :] + im_data[4, :, :, :]*1.7)
             # iem , bll, fsrq, pwn, psr
             # im_tot = np.sum(im_data[1:], axis=0) # for later 
 
@@ -145,7 +145,7 @@ def load_images_by_numbers(base_dir, num_to_file, numbers, norm=True, add_poisso
         f = num_to_file[num]
         im_data = np.load(os.path.join(base_dir, f))
 
-        im_tot = (im_data[0] + 1.7*im_data[1] + 1.7*im_data[2] + 1.7*im_data[3] + 1.7*im_data[4])
+        im_tot = (im_data[0] + im_data[1] + im_data[2] + im_data[3] + im_data[4])
 
         if add_poisson:
             im_tot = poisson.rvs(im_tot * 10)
