@@ -57,7 +57,7 @@ def read_npy_data(base_dir:str, train:bool, norm:bool, add_poisson:bool,
             im_data = np.load(file_path)
             
             im_tot = (im_data[0, :, :, :] + im_data[1, :, :, :] + im_data[2, :, :, :] 
-                    + im_data[3, :, :, :] + im_data[4, :, :, :]*1.7)
+                    + im_data[3, :, :, :] + im_data[4, :, :, :])
             # iem , bll, fsrq, pwn, psr
             # im_tot = np.sum(im_data[1:], axis=0) # for later 
 
