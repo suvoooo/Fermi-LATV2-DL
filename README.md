@@ -1,8 +1,6 @@
 # Fermi-LATV2-DL
 
-The full pipeline starting from patches of sky to catalog-like data products are created viathe pipeline as below: 
-
-)
+The full pipeline starting from patches of sky to catalog-like data products are created viathe pipeline as below:
 
 ![pipeline](https://github.com/suvoooo/Fermi-LATV2-DL/blob/main/Images/ASID_flow_updated_S10_Flux1.png)
 
@@ -41,4 +39,8 @@ An example of segmentation predictions for 3 randomly selected patches are shown
 
 ### Systematic Uncertainty: Background Model Independence
 
+![effective-recall](https://github.com/suvoooo/Fermi-LATV2-DL/blob/main/Images/B1-B2-real-assoc-FGL-FL8Y_pre.png)
+
 ### Catalog Creation: Application on Real Data
+
+![full-sky-map](https://github.com/suvoooo/Fermi-LATV2-DL/blob/main/Images/Plot9_AllSky1FDL_DR2Class_V2.png)
