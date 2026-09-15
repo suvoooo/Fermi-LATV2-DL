@@ -5,7 +5,7 @@ The full pipeline starting from patches of sky to catalog-like data products are
 ![pipeline](https://github.com/suvoooo/Fermi-LATV2-DL/blob/main/Images/asid_flow_S20.png)
 
 
-We have these components listed below for constructing a deep learning based gamma-ray catalog for Fermi-LAT data. 
+We have these components listed below for constructing a deep learning based gamma-ray source list for Fermi-LAT data. 
 
 ## Point Source Detection + Localization
 * We use a multi-input UNET (takes in array-inputs of different shapes) to predict reliable masks around source locations.
@@ -41,9 +41,9 @@ An example of segmentation predictions for 3 randomly selected patches are shown
 
 ![effective-recall](https://github.com/suvoooo/Fermi-LATV2-DL/blob/main/Images/B1-B2-real-assoc-FGL-FL8Y_pre.png)
 
-### Catalog Creation: Application on Real Data
+### Source List Creation: Application on Real Data
 
-#### **_1FDL catalog preview_**
+#### **_1FDL source list preview_**
 
 First few entries from the full list of 3821 sources; Values are rounded for display;
 
